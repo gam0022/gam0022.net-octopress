@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Linux(Ubuntu)からMac(Lion)へ開発環境を移すときにしたこと"
+title: "Linux(Ubuntu)からOS Xへ開発環境を移すときにしたこと"
 date: 2012-07-28 00:01
 comments: true
 categories: 
