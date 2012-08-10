@@ -156,6 +156,17 @@ module Jekyll
       end
     end
 
+    def site_categories_links(categories)
+      def adjust_fontsize(size)
+        [20, size*2 + 8].min
+      end
+      dir = @context.registers[:site].config['category_dir']
+      categories = categories.to_a.sort.map do |key, val|
+        "<a class='category' style='font-size:#{adjust_fontsize(val.size)}px;' href='/#{dir}/#{key.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'>#{key}(#{val.size})</a>"
+      end
+      categories.join(' / ')
+    end
+
     # Outputs the post.date as formatted html, with hooks for CSS styling.
     #
     #  +date+ is the date object to format as HTML.

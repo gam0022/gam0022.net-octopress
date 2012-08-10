@@ -4,7 +4,7 @@ title: "Mac(Lion)でアプリケーション内でウィンドウを切り替え
 date: 2012-07-29 23:21
 comments: true
 categories: 
-- Mac
+- Mac / OS X
 - Lion
 ---
 

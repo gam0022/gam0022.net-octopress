@@ -4,7 +4,7 @@ title: "Mountain Lionにアップデートしたら、X11が消えた件"
 date: 2012-08-04 15:32
 comments: true
 categories: 
-- Mac
+- Mac / OS X
 - OS X Mountain Lion
 - X11
 - trouble

@@ -101,14 +101,14 @@ gccがないとパッケージ管理システムでコンパイルができな�
 
 試してませんが、[インストーラ](https://github.com/kennethreitz/osx-gcc-installer/)があるので簡単に導入できるのではないかと思います。
 
-## homebewをインストール
+## homebrewをインストール
 
 パッケージ管理システムにはhomebrewを使うことにしました。
 
 [公式](https://github.com/mxcl/homebrew/wiki/installation)のコピペですが、これを叩けばhomebrewをインストールできます。
 
 {% codeblock lang:bash %}
-$ /usr/bin/ruby -e "$(/usr/bin/curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install&#95;homebrew.rb)"
+$ ruby <(curl -fsSk https://raw.github.com/mxcl/homebrew/go)
 {% endcodeblock %}
 
 MacにはRuby1.8が最初から入っているので、心配は不要です。(しかし1.8かよ)

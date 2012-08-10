@@ -4,7 +4,7 @@ title: "MacでRuby on Railsの開発環境を作るまで"
 date: 2012-07-27 06:34
 comments: true
 categories: 
-- Mac
+- Mac / OS X
 - Ruby on Rails
 - rvm
 - gem
