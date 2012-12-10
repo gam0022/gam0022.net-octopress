@@ -1,15 +1,11 @@
 /*!
- * Bootstrap v2.0.2
+ * Bootstrap v2.0.4
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- *
- * Converted to Sass by @johnwlong / @m5o.
- *
- * Date: @DATE
  */
 
 // Core variables and mixins
@@ -40,7 +36,7 @@
 // Components: Buttons & Alerts
 @import "buttons";
 @import "button-groups";
-@import "alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons.scss
+@import "alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons
 
 // Components: Nav
 @import "navs";
@@ -56,8 +52,7 @@
 
 // Components: Misc
 @import "thumbnails";
-@import "labels";
-@import "badges";
+@import "labels-badges";
 @import "progress-bars";
 @import "accordion";
 @import "carousel";
@@ -65,9 +60,3 @@
 
 // Utility classes
 @import "utilities"; // Has to be last to override when necessary
-
-// Custom
-@import "custom/colors";
-@import "custom/fonts";
-@import "custom/layout";
-@import "custom/styles";
