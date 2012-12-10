@@ -136,13 +136,14 @@ p, li {
 }
 
 .pre-code {
-  @include selection(adjust-color($base03, $lightness: 23%, $saturation: -65%), $text-shadow: $base03 0 1px);
+  @include selection(adjust-color($base03, $lightness: -10%, $saturation: -65%), $text-shadow: $base03 0 1px);
   font-family: $mono !important;
   overflow: scroll;
   overflow-y: hidden;
   display: block;
   padding: .8em !important;
   overflow-x: auto;
+  font-size: 13px;
   line-height: 1.45em;
   background: $base03 $noise-bg !important;
   color: $base1 !important;
