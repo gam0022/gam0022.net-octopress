@@ -6,7 +6,7 @@ comments: true
 categories: 
 - Ruby
 - tips
-- ascii
+- ASCII
 ---
 
 Ruby 1.9を使ってアスキーコードを取得する方法です。

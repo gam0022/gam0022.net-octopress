@@ -156,6 +156,11 @@ module Jekyll
       end
     end
 
+    # Outputs a list of categories as comma-separated <a> links. This is used
+    # to output the category list for site's all categories.
+    #
+    # Returns string
+    #
     def site_categories_links(categories)
       def adjust_fontsize(size)
         [20, size*2 + 8].min

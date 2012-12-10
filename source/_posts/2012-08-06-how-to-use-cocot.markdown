@@ -7,7 +7,7 @@ categories:
 - ssh
 - coins
 - cocot
-- Mac / OS X
+- Mac OS X
 ---
 
 私が所属している情報科学類(略称coins)では、24時間いつでもsshできるiMacがあるのですが、文字エンコーディングはEUC-JPです。

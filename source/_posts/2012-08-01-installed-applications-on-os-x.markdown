@@ -4,9 +4,8 @@ title: "Macを使い始めて最初に入れたアプリケーションたち"
 date: 2012-08-01 11:17
 comments: true
 categories: 
-- Mac
+- Mac OS X
 - Lion
-- OS X
 ---
 
 Mac Book Airを使い出してから、1週間を経過しました。
