@@ -13,7 +13,7 @@ layout: default
     {% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
   </header>
   {% endif %}
-  {{ content }}
+  <div class="entry-content">{{ content }}</div>
   {% unless page.footer == false %}
     <footer>
       {% if page.date or page.author %}<p class="meta">
