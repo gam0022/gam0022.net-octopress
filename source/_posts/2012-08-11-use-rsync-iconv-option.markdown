@@ -4,7 +4,7 @@ title: "カテゴリー名に濁点を含んだ日本語が使えない問題を
 date: 2012-08-11 10:38
 comments: true
 categories: 
-- Octpress
+- Octopress
 - Rsync
 - Mac OS X
 - UTF-8-MAC

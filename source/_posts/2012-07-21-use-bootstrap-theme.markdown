@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Octpressのテーマをカスタマイズする
+title: Octopressのテーマをカスタマイズする
 date: 2012-07-21 23:51
 comments: true
 categories: 
-- Octpress
+- Octopress
 - Diary
 - bootstrap
 ---
@@ -35,4 +35,4 @@ rake deploy #公開
 あとは、\_config.ymlをちょっといじるだけで、facebookやGoogle+のボタンをつけたり、
 Disqus Commentsでコメントをできるようにできるので、簡単にモダンなブログを作ることが出来ました。
 
-Octpressすごい!
+Octopressすごい!

@@ -1,33 +1,33 @@
 ---
 layout: post
-title: "Octpressでbootstrap-themeにしたとき、sass/custom/_styles.scssが反映されなくなった件について"
+title: "Octopressでbootstrap-themeにしたとき、sass/custom/_styles.scssが反映されなくなった件について"
 date: 2012-07-24 22:50
 comments: true
 categories: 
-- Octpress
+- Octopress
 - CSS
 - SASS/SCSS
 - theme
 - bootstrap
 ---
 
-## Octpressでbootstrap-themeにしたとき、sass/custom/_styles.scssが反映されなくなった件について
+## Octopressでbootstrap-themeにしたとき、sass/custom/_styles.scssが反映されなくなった件について
 
-前回、[Octpressのテーマをカスタマイズする](http://gam0022.net/blog/2012/07/21/use-bootstrap-theme/)という記事で、
-Octpressに[bootstrap-theme](https://github.com/bkutil/bootstrap-theme)を導入しました。
+前回、[Octopressのテーマをカスタマイズする](http://gam0022.net/blog/2012/07/21/use-bootstrap-theme/)という記事で、
+Octopressに[bootstrap-theme](https://github.com/bkutil/bootstrap-theme)を導入しました。
 
 {% blockquote Overriding Styles http://octopress.org/docs/theme/styles/ %}
 If you want to add or override styles, edit sass/custom/_styles.scss. This stylesheet is imported last, so you can override styles with the cascade.
 {% endblockquote %}
 
-上の文はOctpressの公式からの引用で、本来であれば`sass/custom/_styles.scss`
+上の文はOctopressの公式からの引用で、本来であれば`sass/custom/_styles.scss`
 に書いたSCSSが最終的にオーバーライドされて適用されるはずです。
 
 しかし、このテーマを導入してから、`sass/custom/_styles.scss`に書いたSCSS(CSS)が反映されなくなってしまいました。
 
-## OctpressのCSS生成の仕組み
+## OctopressのCSS生成の仕組み
 
-Octpressでは、`sass`以下のディレクトリにある`.scss`ファイルを読み取り、
+Octopressでは、`sass`以下のディレクトリにある`.scss`ファイルを読み取り、
 最終的なCSSを生成しているようです。(たぶん)
 
 SCSSとは、CSSメタ言語のことで、要するにCSSを生成するための言語です。

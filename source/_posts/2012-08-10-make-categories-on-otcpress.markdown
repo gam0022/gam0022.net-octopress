@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Octpressでカテゴリーの一覧みたいのを実装する"
+title: "Octopressでカテゴリーの一覧みたいのを実装する"
 date: 2012-08-10 12:24
 comments: true
 categories: 
-- Octpress
+- Octopress
 - 日本語
 - ゴ
 ---
 
-Octpressはそれなりに高機能なのにも関わらず、なぜかカテゴリーの一覧を表示する機能がありませんでした。
+Octopressはそれなりに高機能なのにも関わらず、なぜかカテゴリーの一覧を表示する機能がありませんでした。
 
 仕方ないので、自分で実装することにしました。
 
@@ -17,7 +17,7 @@ Octpressはそれなりに高機能なのにも関わらず、なぜかカテゴ
 
 {% img /images/120810-0001.png カテゴリーの一覧 %}
 
-前提知識として、Octpressのサイドバーをカスタマイズするためには、次の2つの作業が必要です。
+前提知識として、Octopressのサイドバーをカスタマイズするためには、次の2つの作業が必要です。
 ここでは、categoriesという名前のサイドバーを追加します。
 
 1. `source/_includes/asides/categories.html`というファイルを作る。
