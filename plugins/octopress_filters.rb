@@ -16,7 +16,7 @@ module OctopressFilters
   end
   def post_filter(input)
     input = unwrap(input)
-    RubyPants.new(input).to_html
+    RubyPants.new(input).to_html.gsub(/<h1>([^<].*[^>])<\/h1>/, '<h1><a name="\1" href="#\1">\1</a></h1>')
   end
 end
 
