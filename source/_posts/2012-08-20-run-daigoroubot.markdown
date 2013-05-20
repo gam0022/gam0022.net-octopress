@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "daigoroubotをMac OS Xで動かすためのメモ"
+title: "大五郎bot(@daigoroubot)を動かすためのメモ"
 date: 2012-08-20 13:28
 comments: true
 categories: 
@@ -12,8 +12,6 @@ categories:
 [@daigoroubot](https://twitter.com/daigoroubot)をMac OS Xで動かすまでのメモです。
 なんて需要が無さそうな記事なんだ!
 
-他のOS(Ubuntuなど)で動かす時には、MeCabのRubyバインディングの時に`extconf.rb`を編集しなくても動作すると思います。
-
 ## Rubyとgemををインストール
 
 とりあえず、バージョンは次のような感じで。インストール方法は[これ](/blog/2012/07/27/getting-started-with-ruby-on-rails-on-mac/)を参考にしてください。
@@ -24,18 +22,26 @@ categories:
 ## required gems
 
 {% codeblock lang:bash %}
-gem install oauth json sqlite3 twitter
+gem install oauth json sqlite3 twitter tweetstream unicode_math
 {% endcodeblock %}
 
 ## MeCabを使えるようにしておく
 
 homebrewを導入しているなら、これでok。
 
+Mac用のメモですが、Ubuntuなら`brew`の代わりに`apt-get`など、環境に合わせた適当なパッケージ管理システムにすれば普通に動くと思います。
+
 {% codeblock lang:bash %}
 brew install mecab mecab-ipadic
 {% endcodeblock %}
 
 ## MeCabのRubyバインディングをする
+
+1. [ここ](http://code.google.com/p/mecab/downloads/list)からbrewで入れたMeCabと同じバージョンのRubyバインディングをダウンロードする。
+2. `tar -jxf mecab-ruby-xxx.tar.gz`などで解凍。
+3. `README`の指示通りに作業する。
+
+<!--
 
 ここが厄介なので、私自身、嵌りました。
 
@@ -59,6 +65,8 @@ dyld: Symbol not found: __ZN5MeCab6Tagger6createEiPPc
 
 Trace/BPT trap
 {% endcodeblock %}
+
+-->
 
 参考:
 [MacにMecabとmecab-rubyをインストールして形態素解析。辞書はIPA辞書、NAIST辞書、UniDicの３種：Garbage In Garbage Out](http://g1g0.com/2012/03/1752/)
