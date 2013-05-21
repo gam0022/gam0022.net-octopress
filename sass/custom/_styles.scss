@@ -10,6 +10,9 @@ blockquote {
 
 div.entry-content {
   margin-bottom: 60px;
+  font-size: 15px;
+  line-height: 26px;
+
 	h1, h2, h3, h4, h5, h6 {
 		line-height: 2;
 		margin-top: 30px;
@@ -46,6 +49,15 @@ div.entry-content {
 		line-height: 1.5;
 		font-size: 11px;
 	}
+  dt {
+    margin-top: 20px;
+  }
+  dl {
+    margin-left: 10px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
 }
 
 div.well > h2 {
@@ -54,5 +66,5 @@ div.well > h2 {
 }
 
 .page-header h1 {
-  font-size: 25px;
+  font-size: 35px;
 }

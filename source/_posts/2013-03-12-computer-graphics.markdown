@@ -31,6 +31,8 @@ OpenGLを使ってアニメーションを作るという課題があったの�
 
 {% img /images/posts/2013-03-12-computer-graphics/3/title.png title画面 %}
 
+<!-- more -->
+
 {% img /images/posts/2013-03-12-computer-graphics/3/playing.png プレイ中 %}
 
 {% img /images/posts/2013-03-12-computer-graphics/3/gameover.png ゲームオーバー %}

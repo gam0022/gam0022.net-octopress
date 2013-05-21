@@ -23,6 +23,8 @@ categories:
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 ```
 
+<!-- more -->
+
 # MathJax.rbの使い方
 
 ブロックの場合、`math`と`endmath`タグで囲む
