@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FDTDで波動関数をシュミレーション(OctopressでMathJax.rbの導入)"
+title: "OctopressでMathJax.rbの導入"
 date: 2013-02-11 16:23
 comments: true
 categories: 

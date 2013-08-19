@@ -7,6 +7,14 @@ sharing: true
 footer: true
 ---
 
+このサイトは備忘録を目的として作りました。読者ターゲットは自分です。
+
+# Contents
+
+- [Blog](/blog) - ブログ
+- [Archives](/blog/archives) - ブログの記事一覧
+- [Works](/works) - 成果物などの紹介
+
 # About me
 
 名前
@@ -37,12 +45,6 @@ footer: true
 好きなゲーム
 : METAL GEAR SOLID シリーズ
 : Silent Hill シリーズ
-
-# Contents
-
-- [Blog](/blog) - ブログ
-- [Archives](/blog/archives) - ブログの記事一覧
-- [Works](/works) - 成果物などの紹介
 
 # Contacts
 

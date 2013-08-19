@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "coinsの環境を使ってDynamic Forwardをする。"
+title: "coinsの環境を使ってDynamic Forward"
 date: 2013-03-21 11:17
 comments: true
 categories: 
@@ -16,7 +16,10 @@ DynamicForwardの方が汎用性が高くて便利なのに、使っている人
 
 [MacでTWINSを学外から使う](http://shkh.hatenablog.com/entry/2011/11/22/231233)
 
-# 1.sshの設定をする
+
+# 接続の方法
+
+## 1.sshの設定をする
 
 まず、`~/.ssh/config`を次のようにします。
 
@@ -39,7 +42,7 @@ DynamicForward 1080
 このように、*(アスタリスク)を使って設定を書くと、
 重複してサーバ名などの設定を書かないで済むというちょっとしたテクニックを使っています。
 
-# 2.SOKCSプロキシを使う
+## 2.SOKCSプロキシを使う
 
 この設定だと、`ssh coins-p`をしたときに、ローカルホストの1080番ポートにSOKCSプロキシサーバを割り当てると、
 学内向けのサイトも普通に見れるようになります。
@@ -49,3 +52,10 @@ SOKCSプロキシの設定は Mac OS X (山ライオン)ならば、`ネット�
 他の環境の人はググって調べてください。
 
 {% img /images/posts/2013-03-21-dynamic-forward.png SOKCSプロキシの設定 %}
+
+# 切断するとき
+
+切断するときは、次の2つの両方の作業をしてください。
+
+* sshの接続を切る。
+* プロキシの設定を無効にする。

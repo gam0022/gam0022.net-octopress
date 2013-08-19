@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Eclipseのコンソール(Console)の出力が文字化けしたときの対処方法"
+title: "Eclipseのコンソール(Console)の出力が文字化けする"
 date: 2013-01-23 10:58
 comments: true
 categories: 
