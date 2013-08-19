@@ -81,6 +81,7 @@ $(document).ready(function() {
   wrapFlashVideos();
   flashVideoFallback();
   addCodeLineNumbers();
+  $('div.entry-content>table').addClass('table table-bordered');
 });
 
 // iOS scaling bug fix
