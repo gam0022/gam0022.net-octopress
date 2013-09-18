@@ -45,7 +45,8 @@ Simple\ FDTD\ Algorithm\ and\ Devils\ in\ the\ Details \\
 ```
 
 インラインの場合、`m` と`em`タグで囲む(下のコードだと、`em`の部分が消えていますが囲んでください)
-``` latex 
+
+```
 1次元の波を {% m %} \psi(x,t) {% em %} という
 ```
 
