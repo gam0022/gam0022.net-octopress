@@ -2,3 +2,4 @@ some-file.txt
 some-directory/
 app/
 *.mp4
+*.swp
