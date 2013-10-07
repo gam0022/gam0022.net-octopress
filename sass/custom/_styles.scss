@@ -14,10 +14,12 @@ div.entry-content {
   line-height: 26px;
 
 	h1, h2, h3, h4, h5, h6 {
+    width: auto;
 		line-height: 2;
 		margin-top: 30px;
 		margin-bottom: 20px;
 		padding-left: 10px;
+    clear: both;
 	}
 	h1 {
 		font-size: 20px;
@@ -49,6 +51,10 @@ div.entry-content {
 		line-height: 1.5;
 		font-size: 11px;
 	}
+  ul,ol {
+    margin-left: 30px;
+    width: auto;
+  }
   dt {
     margin-top: 20px;
   }
@@ -56,7 +62,21 @@ div.entry-content {
     margin-left: 10px;
   }
   li {
-    margin-bottom: 10px;
+    line-height: 2;
+  }
+
+  img {
+    margin: 20px;
+  }
+
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .clear {
+    clear: both;
   }
 }
 

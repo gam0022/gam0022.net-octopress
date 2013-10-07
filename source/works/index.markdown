@@ -9,29 +9,62 @@ footer: true
 
 成果物の紹介。
 
+# RubyGems
+
+## 2013 ImmutableList
+
+{% img right /images/works/immutable_list.png immutable_list %}
+
+RubyGemsとして、ImmutableなLinkedListを公開しました。
+
+C言語の拡張として実装したので、動作はそれなりに高速です。
+
+Immutable かつ Linked なので、Rubyで関数型言語風に再帰を使ってプログラミングをするのに最適なデータ構造です。
+
+* [RubyGems.org](https://rubygems.org/gems/immutable_list)
+* [README(GitHub)](https://github.com/gam0022/immutable_list/blob/master/README.md)
+* [RubyでLinkedListを使うためのC拡張を作った - gam0022.net](http://gam0022.net/blog/2013/08/19/ruby-linkedlist/)
+
+
 # Web
 
-## 2012 TwinCal
+## 2013 Shelf
+
+[{% img right /images/works/shelf.png Shelf %}](/images/works/shelf_original.png)
+
+3Dで描画された回転する棚にカバンを展示することで、実際の店舗でショッピングをしている感覚を体験できるというコンセプトのWeb通販サイトのプロトタイプです。
+
+[COJT](http://inf.tsukuba.ac.jp/ET-COJT/)という、筑波大学の産学連携の授業で開発しました。
+
+WebGL(Canvas)で描画しています。
+
+COJTソフトウェアコース2013の前期の準優勝/技術賞受賞作品です。
+
+[&raquo; Shelf](http://gam0022.net/app/shelf/)
+
+
+## 2012-2013 TwinCal
+
+{% img right /images/works/twincal.png twincal %}
 
 TwinCalとは、Twinsの時間割をiCalendar形式に変換し、 
 Googleカレンダー・iCalへのインポートをサポートするWebサービスです。
 
-{% img /images/works/twincal.png twincal %}
+[&raquo; TwinCal](http://gam0022.net/app/twincal/)
 
-* [TwinCal](http://gam0022.net/app/twincal/)
 
-## 2011- @daigoroubot
+## 2011-2013 @daigoroubot
 
-知っている人は知っているTwitterBotです。
+{% img right /images/works/daigoroubot.png 大五郎Bot %}
 
-{% img /images/works/daigoroubot.png 大五郎Bot %}
-
-マルコフ連鎖で適当につぶやいたりリプをしたり、挨拶や任意のキーワードに反応します。
+マルコフ連鎖で学習する人工無能のTwitterのBOTです。
 
 つくば市の天気予報機能、電卓機能、n進数変換器、全学教室検察など便利な機能を搭載しています。
 
-* [詳細ページ](/works/daigoroubot.html)
-* [@daigoroubot - Twitter](https://twitter.com/daigoroubot)
+[&raquo; More](/works/daigoroubot.html)
+
+[&raquo; @daigoroubot - Twitter](https://twitter.com/daigoroubot)
+
 
 # HSPTV Games
 
@@ -39,9 +72,9 @@ HSPプログラミングコンテスト用に作ったゲーム達です。
 
 ## 2012 Soar(ソアー)
 
-女の子を落下しないように操作して、ひたすら上を目指すアクションゲーム
+[{% img right /images/works/soar.png soar %}](/images/works/soar_original.png)
 
-{% img /images/works/soar.png soar %}
+女の子を落下しないように操作して、ひたすら上を目指すアクションゲーム
 
 * コンテスト
   * [HSPコンテスト2012 #313](http://dev.onionsoft.net/seed/info.ax?id=313)
@@ -51,24 +84,30 @@ HSPプログラミングコンテスト用に作ったゲーム達です。
 * その他
   * [飛び上がれ！女の子が主役のアクションゲーム「Soar (ソアー)」](http://www.moongift.jp/2012/12/20121225/)
 
+
 ## 2010 雲(sky)
+
+[{% img right /images/works/sky1.png 雲 %}](/images/works/sky1_original.png)
 
 パーリンノイズを使ったリアルな雲画像のリアルタイムレンダリング実験。
 
-{% img /images/works/sky1.png 雲 %}
-
-{% img /images/works/sky2.png 実はconfigもできる %}
+描画の高速化の為に、VRAMを直接書き換えるなど、HSPの限界に挑戦した作品。
 
 * コンテスト
   * [HSPコンテスト 2010 #141](http://hsp.tv/contest2010/entry.php?id=141)
 * 作成記録
   * [GAM-22のメモ](http://gmr.blog.shinobi.jp/-%E4%BD%9C%E6%88%90%E8%A8%98%E9%8C%B2-%E9%9B%B2/)
 
+<div class="clear"></div>
+
+[{% img right /images/works/sky2.png config画面 %}](/images/works/sky2_original.png)
+
+
 ## 2009 ボウリング(笑)
 
-OBAQによる物理演算とランキング機能によるステージ投稿が特徴のボウリング風ゲーム。
+[{% img right /images/works/bowling.png ボウリング(笑) %}](/images/works/bowling_original.png)
 
-{% img /images/works/bowling.png ボウリング(笑) %}
+OBAQによる物理演算とランキング機能によるステージ投稿が特徴のボウリング風ゲーム。
 
 * コンテスト
   * [HSPコンテスト 2009 #120](http://hsp.tv/contest2009/list_s1.html#id120)
@@ -83,13 +122,16 @@ OBAQによる物理演算とランキング機能によるステージ投稿が�
   * [隠しブロックについて](http://www38.atwiki.jp/kerupani129/pages/20.html)
   * [窓の杜 - 【週末ゲーム】第402回：「HSPTVブラウザ」で遊んでみよう！](http://www.forest.impress.co.jp/docs/serial/shumatsu/20100122_342276.html)
 
+
 ## 2008 蟲(worms)
 
 蟲を切断して遊ぶゲーム。ドラッグでレーザーを照射。
 
-{% img /images/works/worms.png 蟲 %}
+{% img right /images/works/worms.png 蟲 %}
 
 よく考えてみるとマジキチ。複雑系に興味を持って作ったらしい。
+
+HSPTV部門で効果音を扱うために、[winmm.dll](http://gmr.blog.shinobi.jp/-hsp3%E3%83%A1%E3%83%A2-%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB/hsp%E3%81%A7%E3%80%81midi%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%82%92%E9%B3%B4%E3%82%89%E3%81%99%20-winmm.dll-) を使用した。
 
 * コンテスト
   * [HSPコンテスト2008 #95](http://hsp.tv/contest2008/list_s1.html#id95)
@@ -97,15 +139,18 @@ OBAQによる物理演算とランキング機能によるステージ投稿が�
 * 作成記録
   * [GAM-22のメモ](http://gmr.blog.shinobi.jp/-%E4%BD%9C%E6%88%90%E8%A8%98%E9%8C%B2-%E8%9F%B2/)
 
+
 # Windows Games
 
 HSPで作ったWindows向けゲーム達です。
 
 ## 2007 Battle Armor
 
-厨二の時に作ったタンクシューティング。バランスがクソワロ。
+[{% img right /images/works/battle_armor.png Battle Armor %}](/images/works/battle_armor_original.png)
 
-{% img /images/works/battle_armor.png Battle Armor %}
+厨二の時に作ったタンクシューティング。
+
+バランスがおかしいですが、クリアは出来ます。
 
 * コンテスト
   * [HSPコンテスト 2007 #180](http://hsp.tv/contest2007/list_n3.html#id180)
@@ -117,12 +162,21 @@ HSPで作ったWindows向けゲーム達です。
 * 作成記録
   * [GAM-22のメモ](http://gmr.blog.shinobi.jp/-%E4%BD%9C%E6%88%90%E8%A8%98%E9%8C%B2-battle%20armor/)
 
+
 ## 2006 ASTEROIDS
+
+{% img right /images/works/asteroids.jpg ASTEROIDS %}
 
 中1の時に作った、アーケードゲームの"ASTEROIDS"風の全方向シューティングゲーム。
 
-{% img /images/works/asteroids.jpg ASTEROIDS %}
+UFOやパワーアップアイテムなどのオリジナル要素があります。
 
+* [Vector](http://www.vector.co.jp/soft/win95/game/se414088.html)
 * [GAM-22のメモ](http://gmr.blog.shinobi.jp/-%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0-%E6%99%AE%E9%80%9A/asteroids%20-%2016.8)
 * [Windows100% 5月号に掲載](http://gmr.blog.shinobi.jp/-%E7%A7%81%E3%81%AE%E3%83%A1%E3%83%A2-%E8%87%AA%E6%85%A2/windows100-%205%E6%9C%88%E5%8F%B7%E3%80%80%E6%8E%B2%E8%BC%89)
 * [kerupaniさんによる動画](http://www.youtube.com/watch?v=6rXsh1ktsh0)
+
+## それ以前
+
+* [HDDに眠っていた昔作ったHSPゲームを公開](http://gmr.blog.shinobi.jp/-%E7%A7%81%E3%81%AE%E3%83%A1%E3%83%A2-%E6%97%A5%E8%A8%98/hdd%E3%81%AB%E7%9C%A0%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E6%98%94%E4%BD%9C%E3%81%A3%E3%81%9Fhsp%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%92%E5%85%AC%E9%96%8B)
+* [戦車vs●](http://gmr.blog.shinobi.jp/-%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0-%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88/%E6%88%A6%E8%BB%8Avs%E2%97%8F%20-%200.5)

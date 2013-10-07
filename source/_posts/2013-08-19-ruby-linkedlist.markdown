@@ -8,6 +8,14 @@ categories:
 - Ruby C Extension
 ---
 
+# 追記
+
+* 10/7 RubyGemsとして公開。クラス名はImmutableListに変更。
+  * [RubyGems.org](https://rubygems.org/gems/immutable_list)
+  * [README(GitHub)](https://github.com/gam0022/immutable_list/blob/master/README.md)
+
+# はじめに
+
 RubyのC拡張として `LinkedList` (連結リスト) を実装しました。
 
 Ruby の `Array` は 配列で実装されているため、長いリストでの先頭への要素を追加(`cons`)や連結(`append`)が非常に遅いのをなんとかしたいと思いました。
