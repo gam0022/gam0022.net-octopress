@@ -13,6 +13,8 @@ categories:
 * 10/7 RubyGemsとして公開。クラス名はImmutableListに変更。
   * [RubyGems.org](https://rubygems.org/gems/immutable_list)
   * [README(GitHub)](https://github.com/gam0022/immutable_list/blob/master/README.md)
+* 10/22 クラス名が変わったり、この記事では説明不足の部分があったので、記事を書き直しました。
+  * [Rubyで関数型プログラミングをするための ImmutableList Gem を公開](/blog/2013/10/22/immutable-list-gem/)
 
 # はじめに
 

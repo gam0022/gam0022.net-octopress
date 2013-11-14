@@ -19,6 +19,13 @@ footer: true
 
 [大五郎（Ｕ＾ω＾）BOT (@daigoroubot)](https://twitter.com/daigoroubot)
 
+
+# 名言集
+
+色々あって、[favstar.fm](http://favstar.fm/users/daigoroubot)から BAN されてしまいました。
+
+[twistar.cc](http://twistar.cc/daigoroubot/faved) がそれなりに反映が早い方なので、大五郎の迷言を見たい方は参照してください。
+
 # 機能紹介
 
 ## つくば市の天気予報機能
