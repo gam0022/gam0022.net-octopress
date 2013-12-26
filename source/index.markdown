@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "gam0022.net"
+title: "Index"
 date: 2013-05-20 22:25
 comments: true
 sharing: true
@@ -36,6 +36,7 @@ footer: true
 : C++ (にわか)
 : HSP
 : Scheme
+: OCaml
 : x86 Assembler
 : などなど
 

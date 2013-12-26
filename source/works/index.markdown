@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "works"
+title: "Works"
 date: 2012-12-10 10:22
 comments: true
 sharing: true
@@ -8,6 +8,28 @@ footer: true
 ---
 
 成果物の紹介。
+
+# iOS App
+
+## 2013 カメラで商品検索 C2search
+
+[{% img right /images/works/C2search_tmb.png C2search %}](/images/works/C2search.png)
+
+
+「カメラで商品検索」という画像によって商品の横断検索ができるiOSアプリを開発しました。
+
+画像認識によって、タイトルが長い本、名前を忘れてしまった商品も簡単に検索できます。
+
+Yahoo!ショッピングと楽天市場の両方の結果を同じテーブルビューに表示します。
+
+検索結果を色によってソートする機能もあります。
+
+Yahoo Inter Hack U 2013 参加作品です。
+
+* [公式ページ](http://c2search.gam0022.net/)
+* [Hack ID: 2 カメラで商品検索](http://yhacks.jp/hacku/inter2013/works/2)
+* [マイナビさんによる紹介](http://news.mynavi.jp/articles/2013/12/06/yahoo_inter_hack_u/001.html)
+
 
 # RubyGems
 
@@ -25,8 +47,23 @@ Immutable かつ Linked なので、Rubyで関数型言語風に再帰を使っ�
 * [README(GitHub)](https://github.com/gam0022/immutable_list/blob/master/README.md)
 * [RubyでLinkedListを使うためのC拡張を作った - gam0022.net](http://gam0022.net/blog/2013/08/19/ruby-linkedlist/)
 
+<iframe src="http://www.slideshare.net/shohosoda9/slideshelf" width="490px" height="470px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+
 
 # Web
+
+## 2013 Twitter名刺ジェネレーター
+
+[{% img right /images/works/tmg_tmb.png Twitter名刺ジェネレーター %}](/images/works/tmg.png)
+
+TwitterIDを入力するだけで簡単に名刺が作れるサービスです。
+
+認証は不要でデザインを選択するだけ！
+
+さらに、マルコフ連鎖によってあなたを適当に自己紹介してくれます！
+
+* [Twitter名刺ジェネレーター](http://gam0022.net/app/tmg/)
+
 
 ## 2013 Shelf
 
@@ -103,7 +140,7 @@ HSPプログラミングコンテスト用に作ったゲーム達です。
 [{% img right /images/works/sky2.png config画面 %}](/images/works/sky2_original.png)
 
 
-## 2009 ボウリング(笑)
+## 2009 ボウリング(笑) (bowling(w))
 
 [{% img right /images/works/bowling.png ボウリング(笑) %}](/images/works/bowling_original.png)
 
