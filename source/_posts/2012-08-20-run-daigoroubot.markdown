@@ -41,13 +41,47 @@ brew install mecab mecab-ipadic
 2. `tar -jxf mecab-ruby-xxx.tar.gz`などで解凍。
 3. `README`の指示通りに作業する。
 
+もし次のようなエラーが出たら、`extconf.rb`を編集する必要があるよう。
+
+(参考:[MacPortsで、mecabと、mecab-rubyのインストール](http://d.hatena.ne.jp/kasei_san/20121213/p1))
+
+```bash
+dyld: lazy symbol binding failed: Symbol not found: __ZN5MeCab12getLastErrorEv
+  Referenced from: /Users/kobayashi/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/i686-darwin10.7.0/MeCab.bundle
+  Expected in: flat namespace
+
+
+dyld: Symbol not found: __ZN5MeCab12getLastErrorEv
+  Referenced from: /Users/kobayashi/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/i686-darwin10.7.0/MeCab.bundle
+  Expected in: flat namespace
+```
+
+`extconf.rb` に次のように`$LDFLAGS`を追加します。
+
+```diff extconf.rb
+require 'mkmf'
+
+mecab_config = with_config('mecab-config', 'mecab-config')
+use_mecab_config = enable_config('mecab-config')
+
++$LDFLAGS += ' -L' + `#{mecab_config} --libs-only-L`.chomp
+
+`mecab-config --libs-only-l`.chomp.split.each { | lib |
+  have_library(lib)
+}
+
+$CFLAGS += ' ' + `#{mecab_config} --cflags`.chomp
+
+have_header('mecab.h') && create_makefile('MeCab')
+```
+
 <!--
 
 ここが厄介なので、私自身、嵌りました。
 
 1. まず、[ここ](http://code.google.com/p/mecab/downloads/list)からbrewで入れたMeCabと同じバージョンのRubyバインディングをダウンロードする。
 2. 1.を解凍して、cd。
-3. `extconf.eb`を編集する。
+3. `extconf.rb`を編集する。
   `$LDFLAGS = '-L/usr/local/lib'`という行を、`$CFLAGS〜`の次の行に加える。
 4. {% codeblock lang:bash %}
 ruby extconf.rb
