@@ -86,7 +86,8 @@ COJTソフトウェアコース2013の前期の準優勝/技術賞受賞作品�
 TwinCalとは、Twinsの時間割をiCalendar形式に変換し、 
 Googleカレンダー・iCalへのインポートをサポートするWebサービスです。
 
-[&raquo; TwinCal](http://gam0022.net/app/twincal/)
+* [&raquo; TwinCal](http://gam0022.net/app/twincal/)
+* [アカリクVALUATOR主催 学生のためのアプリ開発コンテスト 最終選考プレゼン](http://tech-tokyo.com/?p=8594)で発表しました。
 
 
 ## 2011-2013 @daigoroubot
