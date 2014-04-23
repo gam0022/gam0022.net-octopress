@@ -6,6 +6,7 @@ comments: true
 categories: 
 - LaTex
 - Keynote
+- Mac OS X
 ---
 
 研究室が始まって、輪講用のスライドをヒイヒイ言いながら作っていた時のことです。
@@ -39,7 +40,7 @@ Keynote には、PowerPointの数式エディタ的な機能が無いらしい�
 
 LaTeXiT では、普通に LaTex と全く同じように数式が扱えます。
 
-私の環境では、「Text」を選ばないと、「LaTex it!」ボタンを押したらエラーメッセージが出てきて数式が作れませんでした。
+式を入力したら、右下の`LaTex it!`ボタンでコンパイル(画像化)してくれます。
 
 {% img /images/posts/2014-04-21-latexit/latexit-usage.png 600 LaTexiTの使い方 %}
 
