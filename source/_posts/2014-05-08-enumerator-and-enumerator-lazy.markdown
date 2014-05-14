@@ -152,3 +152,8 @@ Enumerable#lazy を作った [Yutaka HARA](https://bugs.ruby-lang.org/issues/489
 特に、数学的な処理には強力だと思います。
 
 `map` や `first` メソッドを使って、数列の長さを気にせずに、各処理を抽象化できるのが強力だと思います。
+
+
+# Qiita もやってます
+
+同じ内容の記事を [Qiita](http://qiita.com/gam0022/items/8acfc0c674b96060c03f) にも投稿しました。
