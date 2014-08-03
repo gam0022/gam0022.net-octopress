@@ -5,7 +5,7 @@ date: 2014-06-15 06:50
 comments: true
 categories: 
 - JavaScript
-- Coffeescript
+- CoffeeScript
 - Rails
 ---
 
