@@ -22,7 +22,8 @@ footer: true
 : gam0022
 
 所属
-: 筑波大学 情報学群 情報科学類 3年 ソフトウェアサイエンス専攻
+: 筑波大学 情報学群 [情報科学類](https://www.coins.tsukuba.ac.jp/) 4年 ソフトウェアサイエンス専攻
+: [非数値処理アルゴリズム研究室 NAPL](http://npal.cs.tsukuba.ac.jp/)
 
 誕生日
 : 1992.6.23
