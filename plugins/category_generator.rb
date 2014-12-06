@@ -143,7 +143,7 @@ module Jekyll
     def category_links(categories)
       dir = @context.registers[:site].config['category_dir']
       categories = categories.sort!.map do |item|
-        "<a class='category' href='/#{dir}/#{item.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'>#{item}</a>"
+        "<a class='category' href='/#{dir}/#{URI.encode(item.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)}/'>#{item}</a>"
       end
 
       case categories.length
@@ -167,7 +167,7 @@ module Jekyll
       end
       dir = @context.registers[:site].config['category_dir']
       categories = categories.to_a.sort.map do |key, val|
-        "<a class='category' style='font-size:#{adjust_fontsize(val.size)}px;' href='/#{dir}/#{key.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'>#{key}(#{val.size})</a>"
+        "<a class='category' style='font-size:#{adjust_fontsize(val.size)}px;' href='/#{dir}/#{URI.encode(key.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)}/'>#{key}(#{val.size})</a>"
       end
       categories.join(' / ')
     end
