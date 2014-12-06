@@ -56,6 +56,24 @@ task :generate do
   system "jekyll"
 end
 
+# usage rake generate_only[my-post]
+# thanks to http://rcmdnk.github.io/blog/2013/12/06/blog-octopress-rake/
+desc "Generate only the specified post (much faster)"
+task :generate_only, :filename do |t, args|
+  if args.filename
+    filename = args.filename
+  else
+    filename = Dir.glob("#{source_dir}/#{posts_dir}/*.#{new_post_ext}").sort_by{|f| File.mtime(f)}.last
+  end
+  puts "## Test build for #{filename}"
+  puts "## Stashing other posts"
+  Rake::Task["isolate"].invoke(filename)
+  Rake::Task["generate"].execute
+  puts "## Restoring stashed posts"
+  Rake::Task["integrate"].execute
+end
+task :go => ['generate_only']
+
 desc "Watch the site and regenerate when it changes"
 task :watch do
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
