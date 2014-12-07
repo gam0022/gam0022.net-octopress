@@ -72,7 +72,7 @@ task :generate_only, :filename do |t, args|
   puts "## Restoring stashed posts"
   Rake::Task["integrate"].execute
 end
-task :go => ['generate_only']
+task go: :generate_only
 
 desc "Watch the site and regenerate when it changes"
 task :watch do
