@@ -67,10 +67,10 @@ task :generate_only, :filename do |t, args|
   end
   puts "## Test build for #{filename}"
   puts "## Stashing other posts"
-  Rake::Task["isolate"].invoke(filename)
-  Rake::Task["generate"].execute
+  Rake::Task[:isolate].invoke(filename)
+  Rake::Task[:generate].execute
   puts "## Restoring stashed posts"
-  Rake::Task["integrate"].execute
+  Rake::Task[:integrate].execute
 end
 task go: :generate_only
 
