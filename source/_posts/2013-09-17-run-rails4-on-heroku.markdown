@@ -12,8 +12,6 @@ categories:
 
 Rails4のアプリをHerokuで動かすまでにしたことをメモします。
 
-Mac OS X でやりました。
-
 # 1. Rails4 のプロジェクトを作る
 
 [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)を参考にして Rails4 のプロジェクトを作りました。
@@ -25,6 +23,8 @@ ruby
 
 rails
 : Rails 4.0.0
+
+Mac OS X でやりました。
 
 <!--more-->
 
@@ -139,8 +139,45 @@ and the repository exists.
 heroku run rake db:migrate
 ```
 
+# 7. ハマった点
 
-# 7. 完。
+localでは動くのに、Herokuだとそのままだと上手くいかない場合があります。
+
+そんな場合は、次のように`config/environments/production.rb`の設定を書き換えて、もう一度`git push heroku`しましょう。
+
+## CSSやJSが読み込めない場合
+
+`config/environments/production.rb` 内で `config.assets.compile = true`にします。
+
+```diff config/environments/production.rb
+   # config.assets.css_compressor = :sass
+ 
+   # Do not fallback to assets pipeline if a precompiled asset is missed.
+-  config.assets.compile = false
++  config.assets.compile = true
+ 
+   # Generate digests for assets URLs.
+   config.assets.digest = true
+
+```
+
+## public 以下のファイルが404になる場合
+
+`config/environments/production.rb` 内で `config.serve_static_assets = true`にします。
+
+```diff config/environments/production.rb
+   # config.action_dispatch.rack_cache = true
+ 
+   # Disable Rails's static asset server (Apache or nginx will already do this).
+-  config.serve_static_assets = false
++  config.serve_static_assets = true
+ 
+   # Compress JavaScripts and CSS.
+   config.assets.js_compressor = :uglifier
+```
+
+
+# 完
 
 これでやっと Heroku で Rails4 を動かせるようになりました。
 
