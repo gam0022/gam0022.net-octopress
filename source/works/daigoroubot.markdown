@@ -24,7 +24,8 @@ footer: true
 
 色々あって、[favstar.fm](http://favstar.fm/users/daigoroubot)から BAN されてしまいました。
 
-[twistar.cc](http://twistar.cc/daigoroubot/faved) がそれなりに反映が早い方なので、大五郎の迷言を見たい方は参照してください。
+替わりに、[aclog](http://aclog.koba789.com/daigoroubot)に登録してます。
+
 
 # 機能紹介
 
