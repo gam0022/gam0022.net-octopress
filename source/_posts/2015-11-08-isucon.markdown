@@ -25,7 +25,7 @@ ISUCONの攻略に関する有益な情報は、既に他のブログに多く�
 - [ISUCON5 予選通過しました (@methane編)](http://dsas.blog.klab.org/archives/isucon5-qual-methane.html)
 - [ISUCON 5 決勝戦で負けてきました](http://dsas.blog.klab.org/archives/isucon5-final.html)
 
-参加のきっかけですが、会社の先輩でスーパーエンジニアの @methane さんがISUCONに興味のある新人を募集していました。
+参加のきっかけは、会社の先輩でスーパーエンジニアの @methane さんがISUCONに興味のある新人を募集していたことでした。
 インフラやパフォーマンス・チューニングを学習する良い機会になりそうだと考えて、参加を決意しました。
 また、大学生の @koki_cheese さんが ISUCON メンバーを募集していたので、
 @methane さんが自チームに引き入れ、チーム lily white が結成されました。
