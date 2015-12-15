@@ -113,7 +113,7 @@ Xファイル を POV-Ray の trimesh に変換するスクリプトをRuby で�
 
 光源の設定をするのが非常に大変でした。
 
-下の画像は、アンチエイジングするために、2倍で描画して、Macのプレビューで縮小してます。
+下の画像は、アンチエイリアスするために、2倍で描画して、Macのプレビューで縮小してます。
 
 {% img /images/posts/2014-01-18-interactive-cg/raytracer.png RayTracer - Ruby %}
 
