@@ -1,5 +1,6 @@
 some-file.txt
 some-directory/
 app/
+misc/raymarching/
 *.mp4
 *.swp
