@@ -1,7 +1,8 @@
 ---
 layout: page
 title: "Index"
-date: 2013-05-20 22:25
+# date: 2013-05-20 22:25
+date: 2016/01/31 12:44
 comments: true
 sharing: true
 footer: true
@@ -57,6 +58,9 @@ Twitter
 
 GitHub
 : [gam0022](https://github.com/gam0022)
+
+Qiita
+: [gam0022](http://qiita.com/gam0022)
 
 Google
 : gam0022
