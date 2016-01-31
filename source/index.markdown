@@ -14,6 +14,7 @@ footer: true
 - [Blog](/blog) - ブログ
 - [Archives](/blog/archives) - ブログの記事一覧
 - [Works](/works) - 成果物などの紹介
+- [WebGL](/webgl) - WebGL実験場（レイマーチングがメイン）
 
 # About me
 
@@ -22,8 +23,9 @@ footer: true
 : gam0022
 
 所属
-: 筑波大学 情報学群 [情報科学類](https://www.coins.tsukuba.ac.jp/) 4年 ソフトウェアサイエンス専攻
-: [非数値処理アルゴリズム研究室 NAPL](http://npal.cs.tsukuba.ac.jp/)
+: KLab株式会社(2015-)
+: 筑波大学 情報学群 [情報科学類](https://www.coins.tsukuba.ac.jp/) (2011-2015)
+: [非数値処理アルゴリズム研究室 NAPL](http://npal.cs.tsukuba.ac.jp/) (2015)
 
 誕生日
 : 1992.6.23
@@ -32,12 +34,12 @@ footer: true
 : 群馬県
 
 言語
+: JavaScrit
+: GLSL
 : Ruby
 : C#
 : C++ (にわか)
 : HSP
-: Scheme
-: OCaml
 : x86 Assembler
 : などなど
 
