@@ -3,5 +3,6 @@ some-directory/
 app/
 misc/
 webgl/
+kde/
 *.mp4
 *.swp
