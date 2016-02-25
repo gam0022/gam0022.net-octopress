@@ -63,13 +63,14 @@ Mandelbox で何か作品を作るということ、完成図のイメージは�
 
 "reflect"では床も球体も全て鏡面反射させたかったので、この方法がうまくいきました。
 
-今回の"Carbon"では、背景のMandelboxは普通のPhongシェーディングを行い、空中に漂っている球体は鏡面反射というように、物体ごとに色だけでなく反射の挙動を制御する必要がありました。
+今回の"Carbon"では物体ごとにシェーディングの挙動を切り替えることが必要でした。
+背景のMandelboxは普通のPhongシェーディングを行い、空中に漂っている球体は鏡面反射というように、色だけでなく反射の挙動を物体ごとに制御する必要がありました。
 
 今回は衝突情報を`Intersect`という構造体に格納して、衝突した物体に応じたMaterialに応じて、`Intersect.material`にセットするようにしました。
 
 `Intersect`の定義はこうしました。
 
-```c:struct Intersect
+```c struct Intersect
 struct Intersect {
 	bool isHit;
 
@@ -85,14 +86,21 @@ const int CIRCUIT_MATERIAL = 0;
 const int MIRROR_MATERIAL = 1;
 ```
 
-マーチングループを抜けたあとのシェーディングを行うプログラムで`Intersect.material`を参照してシェーディングの方法を切り替え可能にしました。
-このような方法によって、色だけでなく、反射の挙動やシェーディングも物体毎に制御できるような工夫をしました。
+マーチングループを抜けたあとのシェーディングを行うプログラムで、`Intersect.material`を参照し、シェーディング方法を切り替えるような実装としました。
+この方法により、色だけでなく、反射の挙動やシェーディングも物体ごとに制御することを実現しました。
 
 衝突情報を構造体に格納するというのは、ちょっと前につくった["gem"という作品](http://qiita.com/gam0022/items/9875480d33e03fe2113c)からのアプローチからの継承です。
 "gem"はレイトレーシングのGLSL実装作品ですが、レイマーチングにも応用できることが証明できました。
 
-ここから先は、TDFで出会った人についていろいろ書きます。
-他にもたくさんの人とお話したのですが、
+ここからはTDF（Tokyo Demo Fest）で出会った人についていろいろ書きます。漏れてる方もたくさんいると思います。すみません。
+
+# doxas
+先週の#GLSLTechにつづいて、@h_doxasさんにお会いしました。
+そもそもTDFの存在は、doxasさんのTwitterを見て知りました。
+
+さらに[wgld.org](https://wgld.org/d/glsl/)を読んでレイマーチングを学びました。
+
+もしもdoxasさんがいなかったら、今の私はなかったと思います。ありがとうございます！
 
 # Mr.Doob
 [three.js](http://threejs.org/)の作者であり、[GLSL sandbox](http://glslsandbox.com/)の作者でもある[Mr.Doob氏](https://twitter.com/mrdoob)と記念撮影してもらいました！
@@ -101,14 +109,10 @@ const int MIRROR_MATERIAL = 1;
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 私は英語が怪しいので、あまりコミュニケーション取れませんでしたが、@yomotsuさんに助けていただきました。
-@yomotsuさんみたいにかっこ良く英語話せるようになりたいと本気で思いましたｗ
+@yomotsuさんみたいにかっこ良く英語話せるようになりたいと本気で思いました。
 
-[three.jsに今年初めにPRを送った](https://github.com/mrdoob/three.js/pull/7860)のですが、そのことを覚えてくださったようで、本当に嬉しかったです。
-
-# doxas
-先週の#GLSLTechにつづいて、@h_doxasさんにお会いしました。
-私は[wgld.org](https://wgld.org/d/glsl/)を読んでレイマーチングを学んだので、
-もしもdoxasさんがいなかったら、今の私はなかったと思います。ありがとうございます！
+[three.jsに今年初めにPRを送った](https://github.com/mrdoob/three.js/pull/7860)ことを覚えてくださったようで、本当に嬉しかったです。
+めっちゃ優しい人でした。
 
 # FMS_Cat
 
@@ -120,3 +124,11 @@ https://twitter.com/soma_arc
 
 # velo
 https://twitter.com/velo_aprx
+
+# notargs
+
+# nikq
+リアルタイムパストレやばかったですね。
+https://twitter.com/nikq
+
+# 0x4015 & YET11
