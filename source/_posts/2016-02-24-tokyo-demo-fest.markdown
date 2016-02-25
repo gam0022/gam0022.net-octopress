@@ -9,7 +9,9 @@ categories:
 - CG
 ---
 
-2016-02-20〜21に開催された[Tokyo Demo Fest 2016](http://tokyodemofest.jp/2016/)に参加して、GLSL Graphics Compoで3位入賞してきました！
+2016-02-20〜21に開催された[Tokyo Demo Fest 2016](http://tokyodemofest.jp/2016/)に参加しました。
+私は"Carbon"という作品を投稿して、GLSL Graphics Compoで3位入賞してきました！
+three.jsの作者であり、GLSL sandboxの作者でもあるMr.Doobと握手してきました！
 
 Tokyo Demo Festとは、このようなイベントです（公式ページからの引用）。
 
@@ -42,6 +44,8 @@ GLSL Graphics Compoは他のCompoと比較してもレベルが高かったの�
 
 今回もレイマーチングによる作品です。
 
+<!--more-->
+
 距離関数（distance function）は、Mandelbox というフラクタル図形を mod でループさせただけなので、非常にお手軽です。
 
 この作品は大会中に頑張って製作しました。製作期間はなんと1日です！
@@ -54,11 +58,65 @@ GLSL Graphics Compoは他のCompoと比較してもレベルが高かったの�
 先週の [#GLSLTech](http://gam0022.net/blog/2016/02/16/glsl-tech/)の打ち上げの飲み会の際に、Mandelbox というフラクタル図形という名前を聞きました。
 Mandelbox で何か作品を作るということ、完成図のイメージはだいたい決まっていたので、そこまで出戻りなどもなく、1日で完成にこぎつけることができました。
 
+実装的な細かい話をすると、[前回にレイマーチングで作成した"reflect"という作品](http://qiita.com/gam0022/items/03699a07e4a4b5f2d41f)では、
+`sceneColor`という最短距離にある物体表面の色を返す関数を実装をすることで、色分けを実現しました。
+
+"reflect"では床も球体も全て鏡面反射させたかったので、この方法がうまくいきました。
+
+今回の"Carbon"では、背景のMandelboxは普通のPhongシェーディングを行い、空中に漂っている球体は鏡面反射というように、物体ごとに色だけでなく反射の挙動を制御する必要がありました。
+
+今回は衝突情報を`Intersect`という構造体に格納して、衝突した物体に応じたMaterialに応じて、`Intersect.material`にセットするようにしました。
+
+`Intersect`の定義はこうしました。
+
+```c:struct Intersect
+struct Intersect {
+	bool isHit;
+
+	vec3 position;
+	float distance;
+	vec3 normal;
+
+	int material;
+	vec3 color;
+};
+
+const int CIRCUIT_MATERIAL = 0;
+const int MIRROR_MATERIAL = 1;
+```
+
+マーチングループを抜けたあとのシェーディングを行うプログラムで`Intersect.material`を参照してシェーディングの方法を切り替え可能にしました。
+このような方法によって、色だけでなく、反射の挙動やシェーディングも物体毎に制御できるような工夫をしました。
+
+衝突情報を構造体に格納するというのは、ちょっと前につくった["gem"という作品](http://qiita.com/gam0022/items/9875480d33e03fe2113c)からのアプローチからの継承です。
+"gem"はレイトレーシングのGLSL実装作品ですが、レイマーチングにも応用できることが証明できました。
+
+ここから先は、TDFで出会った人についていろいろ書きます。
+他にもたくさんの人とお話したのですが、
+
 # Mr.Doob
-[three.js](http://threejs.org/)の作者であり、[GLSL sandbox](http://glslsandbox.com/)の作者でもある Mr.Doob 氏と記念撮影してもらいました！
+[three.js](http://threejs.org/)の作者であり、[GLSL sandbox](http://glslsandbox.com/)の作者でもある[Mr.Doob氏](https://twitter.com/mrdoob)と記念撮影してもらいました！
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/mrdoob">@mrdoob</a> と記念撮影！ <a href="https://twitter.com/hashtag/TokyoDemoFest?src=hash">#TokyoDemoFest</a> <a href="https://t.co/j1xwSKNamz">pic.twitter.com/j1xwSKNamz</a></p>&mdash; がむ@TDF最高だった (@gam0022) <a href="https://twitter.com/gam0022/status/702292595486040064">2016, 2月 24</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 私は英語が怪しいので、あまりコミュニケーション取れませんでしたが、@yomotsuさんに助けていただきました。
 @yomotsuさんみたいにかっこ良く英語話せるようになりたいと本気で思いましたｗ
+
+[three.jsに今年初めにPRを送った](https://github.com/mrdoob/three.js/pull/7860)のですが、そのことを覚えてくださったようで、本当に嬉しかったです。
+
+# doxas
+先週の#GLSLTechにつづいて、@h_doxasさんにお会いしました。
+私は[wgld.org](https://wgld.org/d/glsl/)を読んでレイマーチングを学んだので、
+もしもdoxasさんがいなかったら、今の私はなかったと思います。ありがとうございます！
+
+# FMS_Cat
+
+# gaz
+https://www.shadertoy.com/user/gaz
+
+# soma_arc
+https://twitter.com/soma_arc
+
+# velo
+https://twitter.com/velo_aprx
