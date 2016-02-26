@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "#TokyoDemoFest2016 の GLSL Graphics Compo で3位入賞！"
+title: "#TokyoDemoFest 2016 の GLSL Graphics Compo で3位入賞！"
 date: 2016-02-24 08:19
 comments: true
 categories: 
@@ -119,7 +119,7 @@ const int MIRROR_MATERIAL = 1;
 
 doxasさんは、あの有名な[wgld.org](https://wgld.org/)や[WebGL 総本山](https://webgl.souhonzan.org/)の中の人です。
 
-wgld.org はWebGLについて日本語で書かれている唯一の資料といっても過言では無いでしょう。
+wgld.orgはWebGLについて日本語で十分な情報が書かれている唯一のサイトといっても過言では無いでしょう。
 しかも初心者でも分かるように、とても丁寧に分かりやすく解説されています。
 
 自分自身、[wgld.org](https://wgld.org/d/glsl/)を読んでレイマーチングを学びました。
@@ -238,12 +238,21 @@ Approximateのグラフィックプログラマーの[Crypticさんのインタ�
 
 残念なことに、0x4015さんもYET11さんにもお会いできませんでした。来年こそは是非お会いしたい！
 
-[i_saint](https://twitter.com/i_saint)さんによると、レイマーチングで実装してるみたいですね。
+### 2nd stage BOSSはレイマーチング作品！？
+この記事を執筆している途中で知ったのですが、[i_saint](https://twitter.com/i_saint)さんによると、レイマーチングで実装してるみたいですね。
+i_saintさんが["2nd stage BOSS"をGLSL Sandboxにポートしていて](https://t.co/4lr7GbTnFc)、たいへん驚きました。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/gam0022">@gam0022</a> yes です。4k 作品はピクセルシェーダ以外に割く容量がほぼ無いのと、現状レイマーチが最も低容量で綺麗な 3DCG 出す方法なので、GLSL Sandbox とかにポート可能な作品も多いです。 (私もコードの具体的な内容は全然理解できてません！)</p>&mdash; i-saint (@i_saint) <a href="https://twitter.com/i_saint/status/702862298600198144">2016年2月25日</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+さらに、Shadertoyにも移植されて、音楽まで含めて完全にWebGLで再現できるようになっていました。
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="en" dir="ltr">So <a href="https://twitter.com/i_saint">@i_saint</a> and I decompiled &quot;Second stage BOSS&quot;, extracted the shaders, and patched it for WebGL. Enjoy! <a href="https://t.co/ezmkRsZ6J5">https://t.co/ezmkRsZ6J5</a> <a href="https://twitter.com/hashtag/shadertoy?src=hash">#shadertoy</a></p>&mdash; Michael Tedder (@_Falken) <a href="https://twitter.com/_Falken/status/702863221409976321">2016年2月25日</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 せっかくシェーダのコードが公開されているので、研究させていただきます！
+
+大会が終わった後でも、こんなにもワクワクさせてくれるTDFは本当に最高ですね！
 
 いつか自分も、このくらいのデモを作れるようになりたいなぁ…（無理だなぁ）
 
