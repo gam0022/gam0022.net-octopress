@@ -46,9 +46,17 @@ GLSL Sandboxで動作させるためには、フラグメントシェーダだ�
 - [Shadertoy - Carbon \[TDF2016\]](https://www.shadertoy.com/view/MsG3Wy)
 - [GLSL Sandbox - Carbon](http://glslsandbox.com/e#30972.0)
 
-![Carbon](/images/posts/2016-02-24-tokyo-demo-fest/carbon-blue.png)
+<!--[Carbon](/images/posts/2016-02-24-tokyo-demo-fest/carbon-blue.png)-->
+
+![Carbon - Blue](/images/posts/2016-02-24-tokyo-demo-fest/carbon-neo-blue.png)
+![Carbon - Green](/images/posts/2016-02-24-tokyo-demo-fest/carbon-neo-green.png)
+![Carbon - Red](/images/posts/2016-02-24-tokyo-demo-fest/carbon-neo-red.png)
+![Carbon - Violet](/images/posts/2016-02-24-tokyo-demo-fest/carbon-neo-violet.png)
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">GLSL Compo に 「Carbon」という作品を出しました！<a href="https://t.co/UOqE3FvFyW">https://t.co/UOqE3FvFyW</a><a href="https://t.co/JxkH3LtI4t">https://t.co/JxkH3LtI4t</a><a href="https://twitter.com/hashtag/TokyoDemoFest?src=hash">#TokyoDemoFest</a> <a href="https://t.co/yfkJBzQllD">pic.twitter.com/yfkJBzQllD</a></p>&mdash; がむ@TDF最高だった (@gam0022) <a href="https://twitter.com/gam0022/status/701327225224736768">2016, 2月 21</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/TokyoDemoFest?src=hash">#TokyoDemoFest</a> の &quot;Carbon&quot; の回路にglow効果をつけたのでスクショ撮り直した。Shadertoyにも反映。<a href="https://t.co/zeIZhsc8zT">https://t.co/zeIZhsc8zT</a> <a href="https://t.co/Q4UKTCfAsP">pic.twitter.com/Q4UKTCfAsP</a></p>&mdash; がむ@TDF最高だった (@gam0022) <a href="https://twitter.com/gam0022/status/703612944903372800">2016年2月27日</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">私の「Carbon」が GLSL Compo で入賞しました👏<br>ありがとうございます！ <a href="https://twitter.com/hashtag/TokyoDemoFest?src=hash">#TokyoDemoFest</a><a href="https://t.co/f7LoEYWzFq">https://t.co/f7LoEYWzFq</a> <a href="https://t.co/SIel9DKA6n">pic.twitter.com/SIel9DKA6n</a></p>&mdash; がむ@TDF最高だった (@gam0022) <a href="https://twitter.com/gam0022/status/701362103928487937">2016年2月21日</a></blockquote>
@@ -56,7 +64,7 @@ GLSL Sandboxで動作させるためには、フラグメントシェーダだ�
 
 今回もレイマーチングによる作品です。
 
-距離関数（distance function）は、Mandelbox というフラクタル図形を mod でループさせただけなので、非常にお手軽です。
+距離関数（distance function）は、Mandelboxというフラクタル図形を mod でループさせただけなので、非常にお手軽です。
 
 <!--more-->
 
@@ -64,11 +72,11 @@ GLSL Sandboxで動作させるためには、フラグメントシェーダだ�
 20日のお昼くらいに作り始めて、20日は徹夜で作業し、21日の13:00の提出期限のギリギリに間に合わせました。
 提出期限5分前くらいまでバグが取れずにあたふたしていたのですが、なんとか提出できて本当に嬉しかったです。
 
-シェーダはデバックが難しいので、バグを取るのはけっこう大変です…
+シェーダはデバッグが難しいので、バグを取るのはけっこう大変です…
 今回も同名の変数を異なるスコープで宣言しているという単純なミスで30分くらい無駄にしました。みなさんは気をつけましょう…
 
-先週の [#GLSLTech](http://gam0022.net/blog/2016/02/16/glsl-tech/)の打ち上げの飲み会の際に、Mandelbox というフラクタル図形という名前を聞きました。
-Mandelbox で何か作品を作るということ、完成図のイメージはだいたい決まっていたので、そこまで出戻りなどもなく、1日で完成にこぎつけることができました。
+実は先週の [#GLSLTech](http://gam0022.net/blog/2016/02/16/glsl-tech/)の打ち上げの飲み会の際に、Mandelboxというフラクタル図形という名前を聞きました。
+Mandelboxで何か作品を作るということ、完成図のイメージはだいたい決まっていたので、そこまで出戻りなどもなく、1日で完成にこぎつけることができました。
 
 わざと0.5秒おきにチカチカ点滅させてます。BPM120の曲を後ろで流すことを想定したためです。
 
@@ -108,6 +116,21 @@ const int MIRROR_MATERIAL = 1;
 "gem"はレイトレーシングのGLSL実装作品ですが、レイマーチングにも応用できることを証明できました。
 
 ソースコードは可読性重視したので、なんとか読めるレベルになっていると思います。参考にしてください。
+
+## カメラのデバッグ
+カメラのデバッグのために`THREE.OrbitControls`を使いたかったので、three.jsで開発やデバッグしました。
+
+- [Carbon - three.js版](http://gam0022.net/misc/raymarching/carbon_tdf2016.html)
+
+ただし、GLSLのエラーを見つけるためにGLSL sandboxにコピペするといったように、three.js製の自作システムと、GLSL sandboxを平行して使用しました。
+GLSL sandboxと互換性を持たせるために、three.jsで開発したシステムはGLSL sandboxと互換のある`uniforms`設計をしました。
+
+Mandelboxのいい感じに映し出すためのカメラの軌跡を見つけるのが大変でした。適当に動かすと、すぐにMandelboxの壁に衝突してしまうので…
+MandelboxのScaleというパラメータを弄りつつ、直線で壁に衝突しない軌跡を発見できたのは、`THREE.OrbitControls`のおかげです。
+
+他にもスクショをとるのにも、自作システムが役に立ちました。
+
+GLSL sandboxで清書する前に、まずは自作システムで下書きするという方法はオススメです。
 
 # TDFで出会った、すごい人たち
 コミュ症なので、普段はあんまり人に話しかけたりしないのですが、勇気を出して交流してみました。
@@ -223,7 +246,7 @@ gaziyaさんの"Dragon"は、GLSL Graphics Compoで見事に1位でした！
 
 「Amigaは日本で有名か？」という質問には笑ってしまいました（TDFの参加者がAmiga大好きなのは何故なんだろう…）。
 
-Approximateのグラフィックプログラマーの[Crypticさんのインタビュー記事](http://6octaves.blogspot.jp/2016/01/crypticapproximate.html)を見せて
+また、Approximateのグラフィックプログラマーの[Crypticさんのインタビュー記事](http://6octaves.blogspot.jp/2016/01/crypticapproximate.html)を見せてくれました。
 
 （自分のひどい英語に根気よく付き合ってくださってありがとうございました＞＜）
 
