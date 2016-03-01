@@ -43,8 +43,8 @@ GLSL Sandboxで動作させるためには、フラグメントシェーダだ�
 
 コチラから動くデモをご覧になれます！
 
-- [Shadertoy - Carbon \[TDF2016\]](https://www.shadertoy.com/view/MsG3Wy)
-- [GLSL Sandbox - Carbon - TDF Submit Ver.](http://glslsandbox.com/e#30972.0)
+- [Shadertoy - Carbon \[TDF2016\] - Final Version](https://www.shadertoy.com/view/MsG3Wy)
+- [GLSL Sandbox - Carbon - TDF Submited Version](http://glslsandbox.com/e#30972.0)
 
 <!--[Carbon](/images/posts/2016-02-24-tokyo-demo-fest/carbon-blue.png)-->
 
