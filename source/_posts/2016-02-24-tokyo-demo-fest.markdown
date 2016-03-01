@@ -273,6 +273,15 @@ i_saintさんが["2nd stage BOSS"をGLSL Sandboxにポートしていて](https:
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="en" dir="ltr">So <a href="https://twitter.com/i_saint">@i_saint</a> and I decompiled &quot;Second stage BOSS&quot;, extracted the shaders, and patched it for WebGL. Enjoy! <a href="https://t.co/ezmkRsZ6J5">https://t.co/ezmkRsZ6J5</a> <a href="https://twitter.com/hashtag/shadertoy?src=hash">#shadertoy</a></p>&mdash; Michael Tedder (@_Falken) <a href="https://twitter.com/_Falken/status/702863221409976321">2016年2月25日</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+また、[kioku_systemk](https://twitter.com/kioku_systemk)さんから、4KBプロシージャルGFXのテンプレートを教えていただきました。
+このようなテンプレートがあれば、4Kデモのシェーダプログラムに集中できるので、素晴らしいですね。
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/i_saint">@i_saint</a> <a href="https://twitter.com/gam0022">@gam0022</a> 最近の向けの説明だとこっちの方が目的のものに近いかもです。 <a href="https://t.co/ylBByZfESf">https://t.co/ylBByZfESf</a></p>&mdash; kioku@TDF片付け (@kioku_systemk) <a href="https://twitter.com/kioku_systemk/status/702877874462728192">2016年2月25日</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+GLSL sandboxへのportが可能であれば、逆に4Kのexeにもport可能なはずなので、来年のTDFでは4K Compoから出してもいいかな、とちょっと考えました。
+しかし、自分には音楽をプロシージャルに作る技術は無いので、冷静に考えたら無謀でしたｗ
+
 せっかくシェーダのコードが公開されているので、研究させていただきます！
 
 大会が終わった後でも、こんなにもワクワクさせてくれるTDFは本当に最高ですね！
