@@ -7,15 +7,142 @@ sharing: true
 footer: true
 ---
 
-成果物の紹介（最終更新: 2016/03/02）。
+成果物の紹介（最終更新: 2016/03/13）。
 
 # Book
 
+執筆した書籍を紹介します。
+
+## 2015冬 JavaScriptoon2
+
+[{% img right /images/works/javascriptoon2.jpg JavaScriptoon2 %}](/images/works/javascriptoon2_original.jpg)
+
+TechBooster というサークルに参加し、「JavaScriptoon2」というWebフロントエンド本を執筆しました。
+
+「シェーダだけで世界を創る！Three.jsによるレイマーチング」という章を担当しました。
+
+レイマーチングはレイトレーシングの1種です。
+レイトレーシングやレイトレーシングは膨大な計算が必要ですが、フラグメントシェーダで実装することで、GPUの力を利用したリアルタイムに描画する方法を紹介しています。
+
+そもそもシェーダとは何かという基礎の解説からはじまり、レイマーチングの肝となる「距離関数」についても丁寧に解説しました。
+
+- [JavaScriptoon2 - TechBooster in C89](https://techbooster.github.io/c89/#scriptoon2)
+- [JavaScriptoon2 - BOOTH](https://techbooster.booth.pm/items/178227/)
+
+## 2015夏 JavaScriptoon
+
+[{% img right /images/works/javascriptoon.png JavaScriptoon %}](/images/works/javascriptoon_original.png)
+
+TechBooster というサークルに参加し、「JavaScriptoon」というWebフロントエンド本を執筆しました。
+
+「three.js でお手軽 3DCG 入門」という章を担当しました。
+
+three.js はWebGLを手軽に使うためのJavaScriptのライブラリです。
+
+3DCGが初めてという人でも分かるように、基礎から説明しています。
+
+- [JavaScriptoon - TechBooster in C88](https://techbooster.github.io/c88/#scriptoon)
+- [JavaScriptoon - BOOTH](https://techbooster.booth.pm/items/126683/)
+
 # WebGL Works
+
+WebGLで作成した映像作品と活動を紹介します。
+
+動くデモは[こちら](http://gam0022.net/webgl/)にもまとめています。
+
+## 2016 Carbon
+
+[{% img right /images/works/carbon.png Carbon %}](/images/works/carbon_original.png)
+
+TokyoDemoFest 2016 の GLSL Graphics Compo で3位入賞した、レイマーチングによる映像作品です。
+
+Mandelbox というフラクタル図形を mod で無限にループさせています。
+
+- [Shadertoy - Carbon \[TDF2016\] - Final Version](https://www.shadertoy.com/view/MsG3Wy)
+- [GLSL Sandbox - Carbon - TDF Submited Version](http://glslsandbox.com/e#30972.0)
+
+解説記事はこちらです。
+
+- [#TokyoDemoFest 2016 の GLSL Graphics Compo で3位入賞！ - gam0022.net](/blog/2016/02/24/tokyo-demo-fest/)
+
+## 2016 #GLSLTech 発表資料
+
+「シェーダだけで世界を創る！three.jsによるレイマーチング」という発表資料です。
+
+2/14のバレンタインデーに開催された「GPU の熱でチョコも溶けちゃう！？ GLSL シェーダテクニック勉強会（#GLSLTech）」で登壇したときのものです。
+
+詳細は[ブログの記事](/blog/2016/02/16/glsl-tech/)にまとめました。
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/rS2j757JUrqeWL" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shohosoda9/threejs-58238484" title="シェーダだけで世界を創る！three.jsによるレイマーチング" target="_blank">シェーダだけで世界を創る！three.jsによるレイマーチング</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/shohosoda9">Sho Hosoda</a></strong> </div>
+
+## 2016 Gem
+
+[{% img right /images/works/gem.png Gem %}](/images/works/gem_original.png)
+
+光の屈折をシミュレートすることで、輝く宝石をWebGLでレンダリングする「gem」という作品（技術デモ）をつくりました。
+レイトレーシングをGLSLのフラグメントシェーダで実装することで、GPUの並列計算を利用したリアルタイムな描画を実現しています。
+
+- [Gem - gam0022.net](http://gam0022.net/webgl/gem.html)
+
+解説記事はこちらです。
+
+- [これがGPUの力！three.jsによる“リアルタイム”なレイトレーシング 〜宝石編〜 - Qiita](http://qiita.com/gam0022/items/9875480d33e03fe2113c)
+
+## 2015 Reflect
+
+[{% img right /images/works/reflect.png Gem %}](/images/works/reflect_original.png)
+
+レイマーチングで鏡面反射する球体を無限に並べたシーンをリアルタイムに描画するデモです。
+three.js 公式サンプルにも取り込まれています。
+
+- [Reflect - gam0022.net](http://gam0022.net/misc/raymarching/reflect.html)
+- [three.js 公式サンプル](http://threejs.org/examples/#webgl_raymarching_reflect)
+
+解説記事はこちらです。
+
+- [これがGPUの力！Three.jsによる“リアルタイム”なレイトレーシング - Qiita](http://qiita.com/gam0022/items/03699a07e4a4b5f2d41f)
+
+## 2015 Steal Frame
+
+[{% img right /images/works/steel_frame.png Steel Frame %}](/images/works/steel_frame_original.png)
+
+鉄筋をモチーフにしたレイマーチングによる作品です。
+
+距離関数の解説用につくったので、わずか20行ほどのコードでシーンを定義しています。
+
+- [Steal Frame - gam0022.net](http://gam0022.net/misc/raymarching/steel_frame.html)
 
 # Google Chrome Extention
 
+Goole Chrome の拡張機能を紹介します。
+
+## 2016 Slack 返信引用ボタン
+
+{% img right /images/works/slack-reply-button.png Slack Reply Button %}
+
+Slack に返信と引用ボタンをつけるChrome拡張機能です。
+
+- [Slack 返信引用ボタン - Chrome ストア](https://chrome.google.com/webstore/detail/slack-%E8%BF%94%E4%BF%A1%E5%BC%95%E7%94%A8%E3%83%9C%E3%82%BF%E3%83%B3slack-reply/cechhipifmcinmnnjnlichjigoabokbg?hl=ja)
+- [GitHubリポジトリ](https://github.com/gam0022/slack-reply-and-quote-button)
+
 # Research
+
+大学の卒業研究を紹介します。
+
+## 2014-2015 非多様体構造を許容した可展面パッチ集合による紙模型用形状モデルの構築
+
+[{% img right /images/works/paper_craft_dolphin.jpg Paper Craft -  dolphin %}](/images/works/paper_craft_dolphin_original.jpg)
+
+曲面を利用したペーパークラフト（画像奥）をインタラクティブに設計するシステムを提案しました。
+
+市販ソフトウェアで作成したペーパークラフト（画像手前）と比較すると、
+曲線による滑らかな表現、ヒレの部分の1枚の紙の構造（非多様体構造）を許容できる、組立の手間が少ないなどのメリットがあります。
+
+- [学位論文(PDF)](http://www.npal.cs.tsukuba.ac.jp/thesis/2014/thesis2014b_hosoda.pdf)
+- [動画](https://www.dropbox.com/s/8ucnj04gq7zw3uy/vc2015.mp4?dl=0)
+- 学外表彰
+  - GCAD賞, Visual Computing / [グラフィクスと CAD 合同シンポジウム 2015](http://ipsj-gcad.sakura.ne.jp/vc2015/), 細田翔,三谷純,金森由博, 可展面間の交差に基づくトリム処理を組み入れた対話的紙模型用形状構築システム, 2015/06/28,29
+  - 学生奨励賞, [情報処理学会第77回全国大会](http://www.ipsj.or.jp/event/taikai/77/), 細田翔,三谷純,金森由博, 可展面間の交差に基づくトリム処理を組み入れた対話的紙模型用形状構築システム, 2015/03/23
 
 # iOS App
 
@@ -40,6 +167,8 @@ Yahoo Inter Hack U 2013 参加作品です。
 
 
 # RubyGems
+
+Ruby 向けのライブラリの紹介です。
 
 ## 2013 ImmutableList
 
