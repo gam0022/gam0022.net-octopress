@@ -141,7 +141,7 @@ Slack に返信と引用ボタンをつけるChrome拡張機能です。
 - [学位論文(PDF)](http://www.npal.cs.tsukuba.ac.jp/thesis/2014/thesis2014b_hosoda.pdf)
 - [動画](https://www.dropbox.com/s/8ucnj04gq7zw3uy/vc2015.mp4?dl=0)
 - 学外表彰
-  - GCAD賞, Visual Computing / [グラフィクスと CAD 合同シンポジウム 2015](http://ipsj-gcad.sakura.ne.jp/vc2015/), 細田翔,三谷純,金森由博, 可展面間の交差に基づくトリム処理を組み入れた対話的紙模型用形状構築システム, 2015/06/28,29
+  - [GCAD賞](http://www.ipsj-gcad.sakura.ne.jp/%CD%A5%BD%A8%B8%A6%B5%E6%C8%AF%C9%BD%BE%DE.html#q23e1b1c), Visual Computing / [グラフィクスと CAD 合同シンポジウム 2015](http://ipsj-gcad.sakura.ne.jp/vc2015/), 細田翔,三谷純,金森由博, 可展面間の交差に基づくトリム処理を組み入れた対話的紙模型用形状構築システム, 2015/06/28,29
   - 学生奨励賞, [情報処理学会第77回全国大会](http://www.ipsj.or.jp/event/taikai/77/), 細田翔,三谷純,金森由博, 可展面間の交差に基づくトリム処理を組み入れた対話的紙模型用形状構築システム, 2015/03/23
 
 # iOS App
