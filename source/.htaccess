@@ -1,0 +1,4 @@
+Redirect permanent /misc/ruby-refract/ruby.html http://gam0022.net/webgl/#raytracing_gem
+Redirect permanent /webgl/gem.html http://gam0022.net/webgl/#raytracing_gem
+Redirect permanent /misc/raymarching/reflect.html http://gam0022.net/webgl/#raymarching_reflect
+Redirect permanent /misc/raymarching/steel_frame.html http://gam0022.net/webgl/#raymarching_steel-frame
