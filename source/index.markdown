@@ -62,6 +62,9 @@ GitHub
 Qiita
 : [gam0022](http://qiita.com/gam0022)
 
+Hatena Blog
+: [gam0022](http://gam0022.hatenablog.com/)
+
 Google
 : gam0022
 
